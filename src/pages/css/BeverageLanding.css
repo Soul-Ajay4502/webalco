@@ -1,0 +1,118 @@
+/* Styles for the main container */
+.beverage-landing-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the sidebar section */
+.beverage-sidebar {
+  flex-direction: column;
+  width: 250px;
+  padding: 20px;
+  background-color: #99def3;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the header section within the sidebar */
+.beverage-sidebar-header {
+  margin-bottom: 20px;
+}
+
+/* Styles for the heading (h3) within the sidebar header */
+.beverage-sidebar-header h3 {
+  color: #333;
+}
+
+/* Styles for the unordered list within the sidebar */
+.beverage-sidebar-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Styles for the list items within the sidebar menu */
+.beverage-sidebar-menu li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Styles for the main content section */
+.beverage-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Styles for the header section within the content */
+.beverage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the notification element */
+.notification {
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the bell icon inside the notification element */
+.notification-icon {
+  margin-right: 88px;
+}
+
+/* Styles for the notification badge */
+.notification-badge {
+  background-color: #fff;
+  color: #4caf50;
+  border-radius: 50%;
+  padding: 4px;
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+/* Styles for the dashboard section */
+.beverage-dashboard {
+  background-color: #aaebc7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the heading (h3) within the dashboard section */
+.beverage-dashboard h3 {
+  color: #333;
+}
+
+/* Styles for paragraphs within the dashboard section */
+.beverage-dashboard p {
+  color: #666;
+}
+
+/* Styles for the "Logout" button */
+.logout-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Add the following styles to align the logout button to the top right corner */
+  position: absolute;
+  top: 100px;
+  right: 8px;
+}
+
+/* Styles for the "Logout" button on hover */
+.logout-button:hover {
+  background-color: #45a049;
+}

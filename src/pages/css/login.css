@@ -1,0 +1,77 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    background-color: #42494b;
+  }
+  
+  .login-form {
+    width: 300px;
+    padding: 10px;
+    background-color: #d69898;
+    border-radius: 5px;
+    
+  }
+  
+  .login-form h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-selectuser {
+    margin-bottom: 15px;
+    margin-left: 90px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 96%;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  button[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    background-color: #431eeb;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #45a049;
+  }
+  
+  .password-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+  
+  }
+  
+  .password-input input {
+    width: 100%;
+    padding-right: 30px; /* Provide space for the eye icon */
+  }
+  
+  .password-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  
+  
