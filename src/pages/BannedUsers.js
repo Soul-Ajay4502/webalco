@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './css/BannedUsers.css';
 import axios from 'axios';
 
+
 const BannedUsersPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [bannedUsers, setBannedUsers] = useState([]);
@@ -40,11 +41,11 @@ const BannedUsersPage = () => {
       <table>
         <thead>
           <tr>
-            <th>Username</th>
-            <th>Reason for Ban</th>
-            <th>Ban Period</th>
-            <th>Reporter</th>
-            <th>Proof</th>
+            <th>USERNAME</th>
+            <th>REASON FOR BAN</th>
+            <th>BAN PERIOD </th>
+            <th>REPORTER</th>
+            <th>PROOF</th>
           </tr>
         </thead>
         <tbody>

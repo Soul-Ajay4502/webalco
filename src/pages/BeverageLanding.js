@@ -5,6 +5,7 @@ import { FaBell } from 'react-icons/fa';
 import { useNavigate, useLocation } from 'react-router-dom';
 import apiConfig from './apiConfig';
 
+
 const BeverageLanding = () => {
   const navigate = useNavigate();
   const [stockData, setStockData] = useState([]);
@@ -25,14 +26,14 @@ const BeverageLanding = () => {
     };
 
     fetchStockData();
-  }, [data]); 
+  }, [data]);
   const handleLogout = () => {
     window.location.href = '/';
   };
 
-  const handleSidebarItemClick = (operation) => {
-    alert(`${operation} Will Be Added`);
-  };
+  // const handleSidebarItemClick = (operation) => {
+  //   alert(`${operation} Will Be Added`);
+  // };
 
   const handleNotificationClick = () => {
     navigate('/NotifyBeverage', { state: { email: email } });
@@ -40,25 +41,16 @@ const BeverageLanding = () => {
 
   return (
     <div className="beverage-landing-container">
-      <div className="beverage-sidebar">
-        <div className="beverage-sidebar-header">
-          <h3>Operations</h3>
-        </div>
-        <ul className="beverage-sidebar-menu">
-          <li onClick={() => handleSidebarItemClick('Order Beverage')}>Order Beverage</li>
-          <li onClick={() => handleSidebarItemClick('View Orders')}>View Orders</li>
-          <li onClick={() => handleSidebarItemClick('Favorites')}>Favorites</li></ul>
-          <button className="logout-button" onClick={handleLogout}>
-            Logout
-          </button>
-        
-      </div>
+
+      <button className="logout-button" onClick={handleLogout}>
+        Logout
+      </button>
       <div className="beverage-content">
         <div className="beverage-header">
           <h2>Welcome {email}</h2>
-          
-            <FaBell className="notification-icon" onClick={handleNotificationClick} />
-         
+
+          <FaBell className="notification-icon" onClick={handleNotificationClick} />
+
         </div>
         <div className="beverage-dashboard">
           <h3>Beverage Stock</h3>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './css/NotifyAdmin.css';
 import axios from 'axios';
 
-const AdminNotificationPage =  () => {
+const AdminNotificationPage = () => {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
@@ -19,9 +19,9 @@ const AdminNotificationPage =  () => {
     fetchNotifications();
   }, []);
 
-  const handleApprove = async (notificationId,s) => {
+  const handleApprove = async (notificationId, s) => {
 
-    const data = { ReportId: notificationId ,status:s}
+    const data = { ReportId: notificationId, status: s }
     try {
       const response = await axios.post('http://localhost:5000/Admin/BanUsers', data);
 
@@ -39,24 +39,24 @@ const AdminNotificationPage =  () => {
 
   };
 
-  const handleReject = async (notificationId,s) => {
+  const handleReject = async (notificationId, s) => {
 
 
-    const data = { ReportId: notificationId ,status:s}
+    const data = { ReportId: notificationId, status: s }
     try {
       const response = await axios.post('http://localhost:5000/Admin/BanUsers', data);
 
       if (response.status === 200)
-      setNotifications((prevNotifications) =>
-      prevNotifications.filter((notification) => notification.Report_ID !== notificationId)
-    );
+        setNotifications((prevNotifications) =>
+          prevNotifications.filter((notification) => notification.Report_ID !== notificationId)
+        );
     } catch (error) { alert('Error approving notification:', error); }
 
 
 
 
 
-    
+
   };
 
   return (
@@ -95,7 +95,7 @@ const AdminNotificationPage =  () => {
                     cursor: 'pointer',
                     marginRight: '10px',
                   }}
-                  onClick={() => handleApprove(notification.Report_ID,1)}
+                  onClick={() => handleApprove(notification.Report_ID, 1)}
                 >
                   Approve
                 </button>
@@ -108,7 +108,7 @@ const AdminNotificationPage =  () => {
                     borderRadius: '4px',
                     cursor: 'pointer',
                   }}
-                  onClick={() => handleReject(notification.Report_ID,2)}
+                  onClick={() => handleReject(notification.Report_ID, 2)}
                 >
                   Reject
                 </button>

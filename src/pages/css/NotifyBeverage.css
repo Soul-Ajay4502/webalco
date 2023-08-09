@@ -1,45 +1,42 @@
 .notification-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .notification {
-    background-color: #e6a544;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .notification h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .notification p {
-    margin-bottom: 10px;
-  }
-  
-  .notification small {
-    margin-left: 10px;
-    color: rgb(3, 2, 2);
-  }
-  
-  .notification button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    
-  }
-  
-  .notification button:hover {
-    background-color: #020a03;
-  }
-  
-  
- 
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.notification {
+  background-color: #e6a544;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.notification h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.notification p {
+  margin-bottom: 10px;
+}
+
+.notification small {
+  margin-left: 10px;
+  color: rgb(3, 2, 2);
+}
+
+.notification button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 5px;
+
+}
+
+.notification button:hover {
+  background-color: #020a03;
+}
