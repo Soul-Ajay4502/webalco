@@ -9,7 +9,7 @@ const AdminNotificationPage = () => {
     // Function to fetch notifications from the API
     const fetchNotifications = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/Admin/notifyAdmin');
+        const response = await axios.get('http://16.170.244.76:5000/Admin/notifyAdmin');
         setNotifications(response.data);
       } catch (error) {
         console.error('Error fetching notifications:', error);
@@ -23,7 +23,7 @@ const AdminNotificationPage = () => {
 
     const data = { ReportId: notificationId, status: s }
     try {
-      const response = await axios.post('http://localhost:5000/Admin/BanUsers', data);
+      const response = await axios.post('http://16.170.244.76:5000/Admin/BanUsers', data);
 
       if (response.status === 200)
         setNotifications((prevNotifications) =>
@@ -44,7 +44,7 @@ const AdminNotificationPage = () => {
 
     const data = { ReportId: notificationId, status: s }
     try {
-      const response = await axios.post('http://localhost:5000/Admin/BanUsers', data);
+      const response = await axios.post('http://16.170.244.76:5000/Admin/BanUsers', data);
 
       if (response.status === 200)
         setNotifications((prevNotifications) =>

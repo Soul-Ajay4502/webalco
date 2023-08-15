@@ -11,7 +11,7 @@ const BannedUsersPage = () => {
     // Function to fetch ban requests from the API
     const fetchBannedUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/Admin/BannedUsers');
+        const response = await axios.get('http://16.170.244.76:5000/Admin/BannedUsers');
         setBannedUsers(response.data);
       } catch (error) {
         console.error('Error fetching banned users:', error);
